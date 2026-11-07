@@ -1,0 +1,6 @@
+estado;nos;fracao_horas;fracao_eventos_20;fracao_eventos_40;Pressão;Pressão (variável);Temperatura;Temperatura (variável);Ponto de orvalho;Ponto de orvalho (variável);Umidade relativa;Umidade relativa (variável);Vento;Vento (variável);Radiação;Radiação (variável)
+1;6;0.017;0.267;0.314;+0.2 (1 h);grad1h_anom_pressao;-0.8 (1 h);grad1h_anom_temperatura;-0.6 (1 h);grad1h_anom_ponto_orvalho;+0.3 (1 h);grad1h_anom_umidade_relativa;+1.5;anom_vento_velocidade;–;anom_radiacao
+2;16;0.034;0.115;0.106;+0.3 (3 h);grad3h_anom_pressao;-1.0 (3 h);grad3h_anom_temperatura;–;anom_ponto_orvalho;+1.1 (6 h);grad6h_anom_umidade_relativa;–;anom_vento_velocidade;-1.3;anom_radiacao
+3;5;0.01;0.095;0.122;+0.2 (1 h);grad1h_anom_pressao;-1.1 (1 h);grad1h_anom_temperatura;+0.6 (1 h);grad1h_anom_ponto_orvalho;+1.3 (1 h);grad1h_anom_umidade_relativa;–;anom_vento_velocidade;-0.8 (1 h);grad1h_anom_radiacao
+4;13;0.029;0.083;0.087;+0.2 (1 h);grad1h_anom_pressao;–;anom_temperatura;–;anom_ponto_orvalho;–;grad3h_anom_umidade_relativa;+0.6;anom_vento_velocidade;–;grad1h_anom_radiacao
+5;3;0.003;0.012;0.015;-0.4 (1 h);grad1h_anom_pressao;-0.7 (6 h);grad6h_anom_temperatura;–;anom_ponto_orvalho;+0.9;anom_umidade_relativa;+1.6;anom_vento_velocidade;-0.7;anom_radiacao

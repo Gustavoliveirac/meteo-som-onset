@@ -1,0 +1,13 @@
+# conda env create -f environment.yml
+# conda activate meteo-som-onset
+name: meteo-som-onset
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - numpy=2.1
+  - pandas=2.2
+  - pyarrow=17
+  - scipy=1.14
+  - matplotlib=3.9
+  - geopandas=1.0

@@ -1,0 +1,133 @@
+secao;item;valor
+dados;estacoes_com_horas;596.0
+dados;horas_train;33508254.0
+dados;horas_val_temporal;5141895.0
+dados;horas_val_spatial;1330850.0
+dados;horas_total;39980999.0
+dados;horas_por_no_treino_media;83770.635
+reprodutibilidade;r_pressao_treino_x_val_temporal;0.9144
+reprodutibilidade;r_pressao_treino_x_val_spatial;0.7367
+reprodutibilidade;r_temperatura_treino_x_val_temporal;0.9974
+reprodutibilidade;r_temperatura_treino_x_val_spatial;0.9929
+reprodutibilidade;r_ponto_orvalho_treino_x_val_temporal;0.9857
+reprodutibilidade;r_ponto_orvalho_treino_x_val_spatial;0.9729
+reprodutibilidade;r_umidade_relativa_treino_x_val_temporal;0.9987
+reprodutibilidade;r_umidade_relativa_treino_x_val_spatial;0.9983
+reprodutibilidade;r_radiacao_treino_x_val_temporal;0.9996
+reprodutibilidade;r_radiacao_treino_x_val_spatial;0.9994
+reprodutibilidade;r_vento_velocidade_treino_x_val_temporal;0.9953
+reprodutibilidade;r_vento_velocidade_treino_x_val_spatial;0.9854
+reprodutibilidade;r_anom_pressao_treino_x_val_temporal;0.9953
+reprodutibilidade;r_anom_pressao_treino_x_val_spatial;0.9923
+reprodutibilidade;r_anom_temperatura_treino_x_val_temporal;0.9978
+reprodutibilidade;r_anom_temperatura_treino_x_val_spatial;0.9979
+reprodutibilidade;r_anom_ponto_orvalho_treino_x_val_temporal;0.995
+reprodutibilidade;r_anom_ponto_orvalho_treino_x_val_spatial;0.997
+reprodutibilidade;r_anom_umidade_relativa_treino_x_val_temporal;0.9965
+reprodutibilidade;r_anom_umidade_relativa_treino_x_val_spatial;0.9984
+reprodutibilidade;r_anom_radiacao_treino_x_val_temporal;0.9958
+reprodutibilidade;r_anom_radiacao_treino_x_val_spatial;0.9986
+reprodutibilidade;r_anom_vento_velocidade_treino_x_val_temporal;0.9965
+reprodutibilidade;r_anom_vento_velocidade_treino_x_val_spatial;0.9936
+relacoes_entre_nos;r_temperatura_x_radiacao;0.7906
+relacoes_entre_nos;r_umidade_relativa_x_temperatura;-0.8816
+relacoes_entre_nos;r_umidade_relativa_x_radiacao;-0.7689
+relacoes_entre_nos;r_vento_velocidade_x_radiacao;0.4561
+relacoes_entre_nos;r_vento_velocidade_x_temperatura;0.3694
+relacoes_entre_nos;r_vento_velocidade_x_umidade_relativa;-0.4216
+relacoes_entre_nos;r_vento_direcao_x_anom_pressao;0.5853
+relacoes_entre_nos;r_vento_direcao_x_anom_temperatura;-0.6576
+relacoes_entre_nos;r_ponto_orvalho_x_radiacao;-0.0675
+relacoes_entre_nos;r_anom_ponto_orvalho_x_anom_umidade_relativa;0.5811
+relacoes_entre_nos;r_pressao_x_radiacao;-0.0061
+relacoes_entre_nos;r_pressao_x_temperatura;-0.1611
+relacoes_entre_nos;r_pressao_x_umidade_relativa;0.1003
+relacoes_entre_nos;r_hora_solar_x_radiacao;0.0534
+relacoes_entre_nos;direcao_vento_media_ponderada_graus;88.6577
+relacoes_entre_nos;fracao_nos_vento_de_sul_135_225;0.0825
+posicoes;radiacao_max_linha_media;18.375
+posicoes;radiacao_max_coluna_media;6.7
+posicoes;temperatura_max_linha_media;16.425
+posicoes;temperatura_max_coluna_media;3.025
+posicoes;umidade_max_linha_media;9.275
+posicoes;umidade_max_coluna_media;7.625
+chuva_por_no;nos_acima_10pct_1h;32.0
+chuva_por_no;nos_acima_20pct_1h;11.0
+chuva_por_no;nos_acima_10pct_6h;223.0
+chuva_por_no;nos_acima_20pct_6h;71.0
+chuva_por_no;top01_linha1_coluna1;1h 0.504  6h 0.643  anomT -1.54  anomUR +1.22  anomRad -0.93  g1anomP +0.51  g1anomT -1.76  g1T -4.85
+chuva_por_no;top02_linha14_coluna10;1h 0.351  6h 0.529  anomT -1.47  anomUR +1.44  anomRad -1.77  g1anomP +0.21  g1anomT -0.44  g1T -0.08
+chuva_por_no;top03_linha14_coluna9;1h 0.328  6h 0.509  anomT -1.83  anomUR +1.68  anomRad -1.79  g1anomP +0.20  g1anomT -0.11  g1T -0.10
+chuva_por_no;top04_linha1_coluna20;1h 0.300  6h 0.474  anomT -1.10  anomUR +1.26  anomRad -1.09  g1anomP +0.39  g1anomT -1.56  g1T -4.90
+chuva_por_no;top05_linha2_coluna1;1h 0.294  6h 0.457  anomT -0.94  anomUR +0.83  anomRad -0.59  g1anomP +0.26  g1anomT -0.95  g1T -2.77
+chuva_por_no;top06_linha15_coluna10;1h 0.285  6h 0.502  anomT -1.75  anomUR +1.85  anomRad -2.09  g1anomP +0.13  g1anomT -0.37  g1T +0.09
+chuva_por_no;top07_linha1_coluna2;1h 0.274  6h 0.421  anomT -0.84  anomUR +0.19  anomRad -0.32  g1anomP +0.26  g1anomT -0.74  g1T -1.77
+chuva_por_no;top08_linha15_coluna9;1h 0.273  6h 0.490  anomT -2.11  anomUR +2.05  anomRad -2.20  g1anomP +0.16  g1anomT -0.19  g1T -0.03
+chuva_por_no;top09_linha1_coluna15;1h 0.244  6h 0.422  anomT -1.44  anomUR +1.47  anomRad -1.19  g1anomP +0.09  g1anomT +0.12  g1T -0.17
+chuva_por_no;top10_linha14_coluna8;1h 0.243  6h 0.449  anomT -1.84  anomUR +1.76  anomRad -1.71  g1anomP +0.10  g1anomT -0.01  g1T -0.30
+chuva_por_no;top11_linha15_coluna8;1h 0.228  6h 0.456  anomT -1.87  anomUR +1.91  anomRad -1.95  g1anomP +0.05  g1anomT -0.10  g1T -0.14
+chuva_por_no;top12_linha1_coluna19;1h 0.186  6h 0.418  anomT -1.01  anomUR +1.28  anomRad -1.29  g1anomP +0.15  g1anomT -1.11  g1T -3.07
+chuva_por_no;top13_linha14_coluna7;1h 0.183  6h 0.402  anomT -1.43  anomUR +1.43  anomRad -1.50  g1anomP +0.12  g1anomT -0.33  g1T -1.18
+chuva_por_no;top14_linha15_coluna11;1h 0.182  6h 0.419  anomT -1.06  anomUR +1.32  anomRad -1.63  g1anomP +0.03  g1anomT -0.55  g1T +0.19
+chuva_por_no;top15_linha14_coluna11;1h 0.174  6h 0.356  anomT -1.06  anomUR +0.88  anomRad -1.44  g1anomP +0.10  g1anomT -0.71  g1T +0.04
+hierarquia;1h_posicao1_grad1h_anom_temperatura;-0.5374
+hierarquia;1h_posicao2_grad3h_anom_temperatura;-0.5296
+hierarquia;1h_posicao3_grad6h_anom_temperatura;-0.5161
+hierarquia;1h_posicao4_anom_umidade_relativa;0.489
+hierarquia;2h_posicao1_anom_umidade_relativa;0.5554
+hierarquia;2h_posicao2_anom_radiacao;-0.5278
+hierarquia;2h_posicao3_grad3h_anom_temperatura;-0.526
+hierarquia;2h_posicao4_grad6h_anom_temperatura;-0.521
+hierarquia;6h_posicao1_anom_umidade_relativa;0.6555
+hierarquia;6h_posicao2_anom_radiacao;-0.5601
+hierarquia;6h_posicao3_anom_ponto_orvalho;0.4804
+hierarquia;6h_posicao4_ponto_orvalho;0.4778
+hierarquia;12h_posicao1_anom_umidade_relativa;0.6985
+hierarquia;12h_posicao2_anom_ponto_orvalho;0.6145
+hierarquia;12h_posicao3_ponto_orvalho;0.5867
+hierarquia;12h_posicao4_anom_radiacao;-0.5387
+hierarquia;24h_posicao1_anom_umidade_relativa;0.7192
+hierarquia;24h_posicao2_anom_ponto_orvalho;0.7026
+hierarquia;24h_posicao3_ponto_orvalho;0.6657
+hierarquia;24h_posicao4_anom_radiacao;-0.5129
+concentracao;nos_para_50pct_1mm;51.0
+concentracao;nos_para_80pct_1mm;153.0
+concentracao;nos_para_50pct_5mm;40.0
+concentracao;nos_para_80pct_5mm;143.0
+concentracao;nos_para_50pct_10mm;34.0
+concentracao;nos_para_80pct_10mm;136.0
+concentracao;nos_para_50pct_20mm;26.0
+concentracao;nos_para_80pct_20mm;121.0
+concentracao;nos_para_50pct_30mm;20.0
+concentracao;nos_para_80pct_30mm;107.0
+concentracao;nos_para_50pct_40mm;16.0
+concentracao;nos_para_80pct_40mm;88.0
+concentracao;40mm_top1_linha1_coluna1;0.1568
+concentracao;40mm_top2_linha2_coluna1;0.0757
+concentracao;40mm_top3_linha1_coluna20;0.0622
+concentracao;40mm_top4_linha3_coluna1;0.0337
+concentracao;40mm_top5_linha1_coluna19;0.0324
+concentracao;40mm_top6_linha1_coluna2;0.0267
+concentracao;40mm_top7_linha1_coluna18;0.0166
+concentracao;40mm_top8_linha14_coluna6;0.0166
+grupos;numero_de_grupos;6.0
+uniao;val_temporal_fracao_horas_chuva_ou_som;0.1602
+uniao;val_temporal_20mm_cobertura_chuva_ou_som;0.7486
+uniao;val_temporal_20mm_capturas_som_sem_chuva;0.2887
+uniao;val_temporal_20mm_capturas_som_sem_chuva_sobre_todos;0.1641
+uniao;val_temporal_30mm_cobertura_chuva_ou_som;0.7762
+uniao;val_temporal_30mm_capturas_som_sem_chuva;0.3021
+uniao;val_temporal_30mm_capturas_som_sem_chuva_sobre_todos;0.1864
+uniao;val_temporal_40mm_cobertura_chuva_ou_som;0.7935
+uniao;val_temporal_40mm_capturas_som_sem_chuva;0.2772
+uniao;val_temporal_40mm_capturas_som_sem_chuva_sobre_todos;0.1787
+uniao;val_spatial_fracao_horas_chuva_ou_som;0.1603
+uniao;val_spatial_20mm_cobertura_chuva_ou_som;0.7449
+uniao;val_spatial_20mm_capturas_som_sem_chuva;0.2611
+uniao;val_spatial_20mm_capturas_som_sem_chuva_sobre_todos;0.1503
+uniao;val_spatial_30mm_cobertura_chuva_ou_som;0.7391
+uniao;val_spatial_30mm_capturas_som_sem_chuva;0.2487
+uniao;val_spatial_30mm_capturas_som_sem_chuva_sobre_todos;0.1498
+uniao;val_spatial_40mm_cobertura_chuva_ou_som;0.7788
+uniao;val_spatial_40mm_capturas_som_sem_chuva;0.2286
+uniao;val_spatial_40mm_capturas_som_sem_chuva_sobre_todos;0.1475

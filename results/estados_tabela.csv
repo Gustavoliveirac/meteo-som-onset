@@ -1,0 +1,6 @@
+estado;nos;fracao_horas;fracao_eventos_20;fracao_eventos_40;Pressão;Temperatura;Ponto de orvalho;Umidade relativa;Vento;Radiação
+1;6;0.017;0.267;0.314;+0,4 hPa (1 h);-2,5 °C (1 h);-1,1 °C (1 h);+6,0 % (1 h);+1,8 m/s;–
+2;16;0.034;0.115;0.106;+0,3 hPa (3 h);-1,9 °C (3 h);–;+6,3 % (6 h);–;-227,8 W/m²
+3;5;0.01;0.095;0.122;+0,0 hPa (1 h);-3,4 °C (1 h);+1,5 °C (1 h);+19,2 % (1 h);–;-245,0 W/m² (1 h)
+4;13;0.029;0.083;0.087;+0,7 hPa (1 h);–;–;–;+0,6 m/s;–
+5;3;0.003;0.012;0.015;-1,2 hPa (1 h);-1,0 °C (6 h);–;+12,4 %;+2,3 m/s;-124,2 W/m²

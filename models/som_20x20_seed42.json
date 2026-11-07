@@ -1,0 +1,9 @@
+{
+  "rows": 20,
+  "cols": 20,
+  "dim": 38,
+  "seed": 42,
+  "lr0": 0.5,
+  "sigma0": 10.0,
+  "iterations": 400000
+}

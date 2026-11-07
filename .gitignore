@@ -1,0 +1,37 @@
+# data, caches and outputs (stay on the machine)
+config_local.py
+work/
+logs/
+_arquivo/
+*.npy
+*.npz
+*.parquet
+*.ckpt
+*.zip
+*.gz
+*.nc
+*.tif
+*.h5
+*.csv
+!data/*.csv
+!docs/*.csv
+!results/*.csv
+!models/*.csv
+!models/*.npz
+# checkpoints stay outside; models/ holds the exported 20x20 (npz and json)
+*.pkl
+# local tooling and notes, not part of the repository
+versionar.sh
+orientacoes/
+escrita/
+referencias/
+resultados/
+# exploratory scripts, kept on the machine until promoted
+teste/
+# environment
+.env
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+cache_tiles/
+/VERSIONAMENTO.md
