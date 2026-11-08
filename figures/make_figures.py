@@ -628,26 +628,36 @@ def _grid_from(df, col):
     return m
 
 
+HOUR_LABELS = {
+    "pt": dict(hours="Horas de cada grupo", events="Eventos ≥ 20 mm de cada grupo", outside="nós não monitorados",
+               group="grupo {g}", x="Hora solar local", y="% das horas ou dos eventos do grupo"),
+    "en": dict(hours="Hours of each group", events="Events ≥ 20 mm of each group", outside="units not monitored",
+               group="group {g}", x="Local solar hour", y="% of the hours or events of the group"),
+}
+
+
 def exp_hora_grupos(L, lang, u):
+    HL = HOUR_LABELS[lang]
     h = pd.read_csv(AN / "grupos_hora_solar.csv", sep=";")
     fig, axes = plt.subplots(1, 2, figsize=(14, 4.8), sharey=True)
-    for ax, col, title in [(axes[0], "fracao_horas", "Horas de cada grupo"),
-                           (axes[1], "fracao_eventos", "Eventos ≥ 20 mm de cada grupo")]:
+    for ax, col, title in [(axes[0], "fracao_horas", HL["hours"]),
+                           (axes[1], "fracao_eventos", HL["events"])]:
         for g, gg in h.groupby("grupo"):
             if g != "fora dos grupos" and int(g) in getattr(config, "GROUPS_EXCLUDED", []):
                 continue
             if g == "fora dos grupos":
-                ax.plot(gg.hora_solar, gg[col] * 100, color="#444444", lw=1.6, ls=(0, (5, 3)), label="nós não monitorados")
+                ax.plot(gg.hora_solar, gg[col] * 100, color="#444444", lw=1.6, ls=(0, (5, 3)), label=HL["outside"])
             else:
                 c = GROUP_COLORS[(int(g) - 1) % len(GROUP_COLORS)]
                 ax.plot(gg.hora_solar, gg[col] * 100, color=c if c.lower() != "#ffffff" else "#d9d9d9", lw=2.2, marker="o", ms=4,
-                        mec="#333333", mew=0.6, label=f"grupo {g}")
-        ax.set_xticks(range(0, 24, 2)); ax.set_xlabel("Hora solar local"); ax.set_title(title, fontsize=13)
-    axes[0].set_ylabel("% das horas ou dos eventos do grupo")
+                        mec="#333333", mew=0.6, label=HL["group"].format(g=g))
+        ax.set_xticks(range(0, 24, 2)); ax.set_xlabel(HL["x"]); ax.set_title(title, fontsize=13)
+    axes[0].set_ylabel(HL["y"])
     h_, l_ = axes[1].get_legend_handles_labels()
     fig.legend(h_, l_, loc="lower center", ncol=len(l_), frameon=False, bbox_to_anchor=(0.5, -0.02))
     fig.tight_layout(rect=(0, 0.08, 1, 1))
     save(fig, "fig04_19_grupos_horas" if lang == "pt" else "fig04_19_group_hours", lang)
+
 
 def fig04_15(L, lang):
     c = pd.read_csv(AN / "curvas.csv", sep=";")
@@ -708,12 +718,14 @@ def _connected(gg):
     return parts
 
 
-STATE_MAPS = [("grad1h_temperatura", "Temperatura, variação em 1 h (°C)"),
-              ("grad1h_ponto_orvalho", "Ponto de orvalho, variação em 1 h (°C)"),
-              ("grad1h_umidade_relativa", "Umidade relativa, variação em 1 h (pontos)"),
-              ("grad1h_pressao", "Pressão, variação em 1 h (hPa)"),
-              ("grad1h_vento_velocidade", "Vento, variação em 1 h (m/s)"),
-              ("anom_temperatura", "Temperatura, anomalia (desvios padrão)")]
+STATE_MAPS = [("grad1h_temperatura", {"pt": "Temperatura, variação em 1 h (°C)", "en": "Temperature, 1 h change (°C)"}),
+              ("grad1h_ponto_orvalho", {"pt": "Ponto de orvalho, variação em 1 h (°C)", "en": "Dew point, 1 h change (°C)"}),
+              ("grad1h_umidade_relativa", {"pt": "Umidade relativa, variação em 1 h (pontos)",
+                                           "en": "Relative humidity, 1 h change (points)"}),
+              ("grad1h_pressao", {"pt": "Pressão, variação em 1 h (hPa)", "en": "Pressure, 1 h change (hPa)"}),
+              ("grad1h_vento_velocidade", {"pt": "Vento, variação em 1 h (m/s)", "en": "Wind speed, 1 h change (m/s)"}),
+              ("anom_temperatura", {"pt": "Temperatura, anomalia (desvios padrão)",
+                                    "en": "Temperature, anomaly (standard deviations)"})]
 
 
 def fig_estados_assinaturas(L, lang, u):
@@ -723,7 +735,7 @@ def fig_estados_assinaturas(L, lang, u):
         lim = np.nanpercentile(np.abs(m), 97) or 1.0
         im = cells(ax, m, S["div"], norm=mcolors.TwoSlopeNorm(0, -lim, lim), ticks=False)
         outline_groups(ax)
-        ax.set_title(lab, fontsize=12)
+        ax.set_title(lab[lang], fontsize=12)
         plt.colorbar(im, ax=ax, shrink=0.8)
     fig.tight_layout()
     save(fig, "fig04_18_grupos_assinaturas" if lang == "pt" else "fig04_18_group_signatures", lang)
@@ -764,7 +776,7 @@ TAB_LABELS = {
 
 
 def fig04_20(L, lang):
-    """Table 4 as a figure: groups ordered by the time of their events, each cell coloured within its column."""
+    """Group summary table as a figure, groups in numeric order, each cell coloured within its column."""
     TL = TAB_LABELS[lang]
     t = pd.read_csv(AN / "tabela_grupos.csv", sep=";")
     t = t[~t.grupo.isin(getattr(config, "GROUPS_EXCLUDED", []))].copy()
